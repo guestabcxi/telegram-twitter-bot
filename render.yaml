@@ -2,7 +2,7 @@ services:
   - type: web
     name: telegram-twitter-bot
     env: python
-    runtime: python-3.10.13
+    plan: free
     buildCommand: pip install -r requirements.txt
     startCommand: bash start.sh
-    autoDeploy: true
+    pythonVersion: 3.11.9
